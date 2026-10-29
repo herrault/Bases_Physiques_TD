@@ -24,7 +24,7 @@ L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies therm
 
 ## 🛠️ Déroulement du TP
 
-### Séance 1 : Prétraitement et Composites Annuels
+### Séance 1 : Prétraitement, Composites et Moyennes annuelles
 
 L'objectif de cette première séance est de préparer les données dans le but de construire des indicateurs d'anomalies de défoliation. Premièrement, il vous faudra éliminer les artefacts radiométriques (nuages, ombres, plans d'eau) et deuxièmement, construire des moyennes annuelles à partir des différentes dates. Nous souhaitons obtenir une moyenne des valeurs valides pour chaque date. 
 
@@ -49,32 +49,32 @@ L'objectif de cette première séance est de préparer les données dans le but 
      * Opération agrégée : `average` (moyenne arithmétique ignorant les cellules NoData).
    * Sorties générées : `LAI_2013_mean.tif`, `LAI_2014_mean.tif`, `LAI_2016_mean.tif`, `LAI_2017_mean.tif`, `LAI_2018_mean.tif`.
 
+5. **Représentation cartographique des moyennes annuelles :**
+  * Appliquez un gradient continu à l'aide d'une palette de couleur sur chaque moyenne annuelle. Attention à conserver les mêmes classes par date dans le but d'établir ces comparaisons. 
+  * Notez vos observations, vous en aurez besoin p)ar ailleurs
+
+
 ---
 
-### Séance 2 : Calcul des Indicateurs et Trajectoires d'Anomalie
+### Séance 2 : Calcul des Anomalies de défoliation
 
-Spatialisation du choc et de la cinétique de récupération à l'aide de la **Calculatrice Raster**.
+Pour cette séance 2, nous allons calculer plus concrètement les indicateurs. Un moyen d'observer comment une situation s'écarte d'une autre dans les sciences du climat est de s'appuer sur des anomalies. Ces dernières décrivent les écarts par rapport à une référence tandis que le sens des valeurs résultant de ces écarts informe sur la positivité ou au contraire la négativité d'un processus en cours. Chaque point de référence sera décrit pas cette anomalie (voir indicateur ci-dessous). La calculatrice raster est à priivilégier pour l'ensemble des calculs.  
 
 1. **Indicateur 1 : État de référence nominal ($\text{LAI}_{\text{ref}}$)**
    $$\text{LAI}_{\text{ref}} = \frac{\text{LAI}_{2013} + \text{LAI}_{2014}}{2}$$
-   *Interprétation :* Cartographie de la biomasse foliaire avant perturbation. Les valeurs de forêt tropicale humide dense oscillent entre $5{,}0$ et $6{,}5\text{ m}^2/\text{m}^2$.
+   *Interprétation :* Appliquez un gradient continu pour représenter la biomasse foliaire avant perturbation. Que pouvez vous dire des valeurs compris au delà de 5 ? En dessous ?
 
 2. **Indicateur 2 : Anomalie du choc de sécheresse ($\text{LAI}_{\text{sech}}$)**
    $$\Delta\text{LAI}_{\text{sech}} = \text{LAI}_{2016} - \text{LAI}_{\text{ref}}$$
-   *Interprétation :* Mesure de la perte foliaire brute sous l'effet du pic El Niño.
-   * $\Delta\text{LAI} < 0$ : Défoliation, stress hydrique sévère ou mortalité.
-   * $\Delta\text{LAI} \approx 0$ : Stabilité structurelle du couvert.
+   *Interprétation :* Appliquez un gradient continu asymétrique de la perte foliaire sous l'effet du pic El Niño. Que signifie les valeurs négatives ou positives ou bien autour de 0, dans un intervalle de +/- 0.5.
 
 3. **Indicateur 3 : Anomalie résiduelle intermédiaire ($\text{LAI}_{\text{reprise}}$)**
    $$\Delta\text{LAI}_{\text{reprise}} = \text{LAI}_{2017} - \text{LAI}_{\text{ref}}$$
-   *Interprétation :* Évaluation de la résilience à court terme ($+1$ an après perturbation).
-   * Retour à $0$ : Reconstitution du houppier.
-   * Maintien en négatif : Persistance du déficit foliaire.
+   *Interprétation :*Appliquez un gradient continu asymétrique de la résilience à court terme ($+1$ an après perturbation). Que signifie les valeurs négatives ou positives ou bien autour de 0, dans un intervalle de +/- 0.5.
 
 4. **Indicateur 4 : Bilan structurel à long terme ($\text{LAI}_{\text{reprise\_n1}}$)**
    $$\Delta\text{LAI}_{\text{reprise\_n+1}} = \text{LAI}_{2018} - \text{LAI}_{\text{ref}}$$
-   *Interprétation :* Discrimination entre rétablissement pérenne et effondrement différé.
-
+   *Interprétation :* De la même manière que précédemment, appliquez un gradient continu. Que signifie les valeurs obtenus et en quoi différent-t'elles des valeurs obtenus précédemment ?
 ---
 
 ### Séance 3 : Masquage Écologique, Typologie de Résilience et Analyse Statistique
