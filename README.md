@@ -8,7 +8,7 @@ Guide méthodologique et protocole de travaux pratiques (TP) pour l'évaluation 
 
 L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies thermiques et hydriques les plus extrêmes enregistrées en Amazonie au XXIᵉ siècle. L'arrêt prolongé des précipitations et l'élévation des températures ont induit un stress hydrique aigu au sein du massif forestier. L'article qui vous a été fourni décrit ces perturbations et s'intéresse à divers indicateurs pour décrire comment la végétation a répondu à ces évènements. Nous allons donc en partie reproduire cette étude en établissant différents points de référence permettant de traiter plusieurs questions telles que : Quel est l'impact immédiat de la sécheresse sur la défoliation, spatialement et en terme de magnitude ?  Quelle est la réponse de la végétation un an plus tard, c'est à dire après une saison des pluies complète ? Existe-t'il une mortalité différée de certains arbres conduisant à observer des baisses de LAI plus tardivement ? Pour rappel, voici ces quatre points de référence :
 
-1. **État pré-choc (2013-2014) :** Référence de la forêten conditions initiales
+1. **État pré-choc (2013-2014) :** Référence de la forêt en conditions initiales
 2. **Impact immédiat (2015-2016) :** Pic de sécheresse et défoliation en raison du manque d'eau
 3. **Reprise intermédiaire (2017) :** Réponse phénologique post-pluies 
 4. **Bilan post-choc (2018) :** Détection de la mortalité différée (*legacy effect*).
@@ -22,7 +22,7 @@ L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies therm
 * **Logiciels requis :** QGIS (>= 3.28) avec modules GDAL/GRASS activés, R (>= 4.2) avec packages `terra`, `sf`, `ggplot2`, `ggpubr`, `dplyr`.
 ---
 
-## 🛠️ Déroulement du T
+## 🛠️ Déroulement du TD
 
 ### Séance 1 : Prétraitement, Composites et Moyennes annuelles
 
@@ -60,17 +60,17 @@ L'objectif de cette première séance est de préparer les données dans le but 
 
 Pour cette séance 2, nous allons calculer plus concrètement les indicateurs. Un moyen d'observer comment une situation s'écarte d'une autre dans les sciences du climat est de s'appuer sur des anomalies. Ces dernières décrivent les écarts par rapport à une référence tandis que le sens des valeurs résultant de ces écarts informe sur la positivité ou au contraire la négativité d'un processus en cours. Chaque point de référence sera décrit pas cette anomalie (voir indicateur ci-dessous). La calculatrice raster est à priivilégier pour l'ensemble des calculs.  
 
-1. **Indicateur 1 : État de référence nominal ($\text{LAI}_{\text{ref}}$)**
+1. **Indicateur 1 : État de référence nominal**
    *Interprétation :* Appliquez un gradient continu pour représenter la biomasse foliaire avant perturbation. Que pouvez vous dire des valeurs compris au delà de 5 ? En dessous ?
 
-2. **Indicateur 2 : Anomalie du choc de sécheresse ($\text{LAI}_{\text{sech}}$)**
+2. **Indicateur 2 : Anomalie du choc de sécheresse**
    *Interprétation :* Appliquez un gradient continu asymétrique de la perte foliaire sous l'effet du pic El Niño. Que signifie les valeurs négatives ou positives ou bien autour de 0, dans un intervalle de +/- 0.5.
 
-3. **Indicateur 3 : Anomalie résiduelle intermédiaire ($\text{LAI}_{\text{reprise}}$)**
+3. **Indicateur 3 : Anomalie résiduelle intermédiaire**
    *Interprétation :*Appliquez un gradient continu asymétrique de la résilience à court terme ($+1$ an après perturbation). Que signifie les valeurs négatives ou positives ou bien autour de 0, dans un intervalle de +/- 0.5.
 
-4. **Indicateur 4 : Bilan structurel à long terme ($\text{LAI}_{\text{reprise\_n1}}$)**
-   *Interprétation :* De la même manière que précédemment, appliquez un gradient continu. Que signifie les valeurs obtenus et en quoi différent-t'elles des valeurs obtenus précédemment ?
+4. **Indicateur 4 : Bilan structurel à long terme**
+   *Interprétation :* De la même manière que précédemment, appliquez un gradient continu. Que signifie les valeurs obtenus et en quoi différent-t'elles des valeurs obtenues précédemment ?
 ---
 
 ### Séance 3 : Masquage Écologique, Typologie de Résilience et Analyse Statistique
