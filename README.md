@@ -51,8 +51,7 @@ L'objectif de cette première séance est de préparer les données dans le but 
 
 5. **Représentation cartographique des moyennes annuelles :**
   * Appliquez un gradient continu à l'aide d'une palette de couleur sur chaque moyenne annuelle. Attention à conserver les mêmes classes par date dans le but d'établir ces comparaisons. 
-  * Notez vos observations, vous en aurez besoin p)ar ailleurs
-
+  * Notez vos observations, vous en aurez besoin par ailleurs
 
 ---
 
@@ -73,15 +72,11 @@ Pour cette séance 2, nous allons calculer plus concrètement les indicateurs. U
    *Interprétation :* De la même manière que précédemment, appliquez un gradient continu. Que signifie les valeurs obtenus et en quoi différent-t'elles des valeurs obtenues précédemment ?
 ---
 
-### Séance 3 : Masquage Écologique, Typologie de Résilience et Analyse Statistique
+### Séance 3 : Masquage, Typologie de Résilience et Analyse Statistique
 
 #### 1. Masquage de la Forêt Tropicale Humide Fermée
-Pour éviter les biais liés aux milieux ouverts, cultures et savanes anthropisées, la zone d'étude est restreinte aux massifs forestiers denses :
-```text
-("LAI_ref@1" >= 5) / ("LAI_ref@1" >= 5)
-```
-*Sortie :* `masque_foret_dense.tif` (1 pour forêt dense, NoData pour le reste).  
-Les indicateurs d'anomalies sont ensuite multipliés par ce masque pour obtenir `LAI_sech_foret`, `LAI_reprise_foret` et `LAI_reprise_n1_foret`.
+Pour centrer votre analyse et ne pas subir les biais liés aux milieux ouverts, cultures et savanes, nous allons restreindre la zone d'étude à la forêt tropicale humide. Nous allons donc construire un masque pour l'appliquer à vos indicateurs d'anomalies. Nous souhaitons conserver les valeurs d'anomalies lorsque cela concerne de la forêt humide tandis que les autres pixels devront être affichées en nodata. 
+*Sortie :* `masque_foret_dense.tif` (1 pour forêt dense, NoData pour le reste).  Appliquez ensuite ce masque sur vos différentes valeurs d'anomalies  pour obtenir `LAI_sech_foret`, `LAI_reprise_foret` et `LAI_reprise_n1_foret`.
 
 #### 2. Matrice de Typologie de Résilience (Calculatrice Raster)
 Croisement de l'impact en 2016 et du bilan en 2018 avec un seuil de significativité écologique fixé à $|\Delta\text{LAI}| = 0{,}5\text{ m}^2/\text{m}^2$ :
