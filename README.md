@@ -16,7 +16,7 @@ L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies therm
 
 ## 🗂️ Données et Environnement de Travail
 
-* **Produit satellitaire :** MODIS MCD15A2H.v061 (Indice Foliaire LAI à 500 m, composite 8 jours, facteur d'échelle $0{,}1$).
+* **Produit satellitaire :** MODIS MCD15A2H.v061 (Indice Foliaire LAI à 500 m, composite 8 jours).
 * **Zone d'étude :** Tuile MODIS `h12v09` (Bassin amazonien / Mato Grosso).
 * **Système de Coordonnées de Référence (SCR) :** Reprojection en WGS 84 (`EPSG:4326`)
 * **Logiciels requis :** QGIS (>= 3.28) avec modules GDAL/GRASS activés, R (>= 4.2) avec packages `terra`, `sf`, `ggplot2`, `ggpubr`, `dplyr`.
@@ -26,14 +26,14 @@ L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies therm
 
 ### Séance 1 : Prétraitement et Composites Annuels
 
-L'objectif est d'éliminer les artefacts radiométriques (nuages, ombres, plans d'eau) et de construire des moyennes annuelles robustes.
+L'objectif de cette première séance est de préparer les données dans le but de construire des indicateurs d'anomalies de défoliation. Premièrement, il vous faudra éliminer les artefacts radiométriques (nuages, ombres, plans d'eau) et deuxièmement, construire des moyennes annuelles à partir des différentes dates. Nous souhaitons obtenir une moyenne des valeurs valides pour chaque date. 
 
 1. **Intégration des données brutes :**
    * Importation des rasters LAI MODIS dans QGIS.
    * Vérification de l'emprise et de la plage de valeurs physiques ($0$ à $7\text{ m}^2/\text{m}^2$). Les valeurs supérieures à $7$ (ex. $25{,}4$) correspondent aux masques de nuages ou d'eau.
 
 2. **Constitution des stacks annuels :**
-   * Regroupement des scènes 8-jours en stacks annuels (`stack_2013`, `stack_2014`, `stack_2015`, `stack_2016`, `stack_2017`, `stack_2018`) via le menu `Raster > Construire un raster virtuel...` ou `Fusionner`.
+   * Regroupement des scènes 8-jours en stacks annuels (`stack_2013`, `stack_2014`, `stack_2015`, `stack_2016`, `stack_2017`, `stack_2018`) via le menu `Raster > Construire un raster virtuel...` ou `Fusionner`. 
 
 3. **Filtrage des artefacts (Reclassification par lot) :**
    * Outil : **Reclassification par table** (*Reclassify by table*) en mode **Processus par lot**.
