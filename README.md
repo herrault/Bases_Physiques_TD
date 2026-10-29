@@ -22,7 +22,7 @@ L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies therm
 * **Logiciels requis :** QGIS (>= 3.28) avec modules GDAL/GRASS activés, R (>= 4.2) avec packages `terra`, `sf`, `ggplot2`, `ggpubr`, `dplyr`.
 ---
 
-## 🛠️ Déroulement du TP
+## 🛠️ Déroulement du T
 
 ### Séance 1 : Prétraitement, Composites et Moyennes annuelles
 
