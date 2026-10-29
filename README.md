@@ -6,7 +6,7 @@ Guide méthodologique et protocole de travaux pratiques (TP) pour l'évaluation 
 
 ## 📌 Contexte Scientifique et Pédagogique
 
-L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies thermiques et hydriques les plus extrêmes enregistrées en Amazonie au XXIᵉ siècle. L'arrêt prolongé des précipitations et l'élévation des températures ont induit un stress hydrique aigu au sein du massif forestier. L'article qui vous a été fourni décrit ces perturbations et s'intéresse à divers indicateurs pour décrire comment la végétation a répondu à ces évènements. Nous allons donc en partie reproduire cette étude en établissant différents points de référence permettant de traiter plusieurs questions telles que : Quel est l'impact immédiat de la sécheresse sur la défoliation, spatialement et en terme de magnitude ?  Quelle est la réponse de la végétation un an plus tard, c'est à dire après une saison des pluies complète ? Existe-t'il une mortalité différée de certains arbres conduisant à observer des baisses de LAI plus tardivement ?
+L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies thermiques et hydriques les plus extrêmes enregistrées en Amazonie au XXIᵉ siècle. L'arrêt prolongé des précipitations et l'élévation des températures ont induit un stress hydrique aigu au sein du massif forestier. L'article qui vous a été fourni décrit ces perturbations et s'intéresse à divers indicateurs pour décrire comment la végétation a répondu à ces évènements. Nous allons donc en partie reproduire cette étude en établissant différents points de référence permettant de traiter plusieurs questions telles que : Quel est l'impact immédiat de la sécheresse sur la défoliation, spatialement et en terme de magnitude ?  Quelle est la réponse de la végétation un an plus tard, c'est à dire après une saison des pluies complète ? Existe-t'il une mortalité différée de certains arbres conduisant à observer des baisses de LAI plus tardivement ? Pour rappel, voici ces quatre points de référence :
 
 1. **État pré-choc (2013-2014) :** Référence de la forêten conditions initiales
 2. **Impact immédiat (2015-2016) :** Pic de sécheresse et défoliation en raison du manque d'eau
@@ -18,9 +18,8 @@ L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies therm
 
 * **Produit satellitaire :** MODIS MCD15A2H.v061 (Indice Foliaire LAI à 500 m, composite 8 jours, facteur d'échelle $0{,}1$).
 * **Zone d'étude :** Tuile MODIS `h12v09` (Bassin amazonien / Mato Grosso).
-* **Système de Coordonnées de Référence (SCR) :** Reprojection en WGS 84 (`EPSG:4326`) ou SIRGAS 2000 / UTM zone 21S (`EPSG:31981`).
+* **Système de Coordonnées de Référence (SCR) :** Reprojection en WGS 84 (`EPSG:4326`)
 * **Logiciels requis :** QGIS (>= 3.28) avec modules GDAL/GRASS activés, R (>= 4.2) avec packages `terra`, `sf`, `ggplot2`, `ggpubr`, `dplyr`.
-
 ---
 
 ## 🛠️ Déroulement du TP
