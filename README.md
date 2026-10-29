@@ -6,24 +6,12 @@ Guide méthodologique et protocole de travaux pratiques (TP) pour l'évaluation 
 
 ## 📌 Contexte Scientifique et Pédagogique
 
-L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies thermiques et hydriques les plus extrêmes enregistrées en Amazonie au XXIᵉ siècle. L'arrêt prolongé des précipitations et l'élévation des températures ont induit un stress hydrique aigu au sein du massif forestier. 
+L'épisode climatique **El Niño de 2015-2016** compte parmi les anomalies thermiques et hydriques les plus extrêmes enregistrées en Amazonie au XXIᵉ siècle. L'arrêt prolongé des précipitations et l'élévation des températures ont induit un stress hydrique aigu au sein du massif forestier. L'article qui vous a été fourni décrit ces perturbations et s'intéresse à divers indicateurs pour décrire comment la végétation a répondu à ces évènements. Nous allons donc en partie reproduire cette étude en établissant différents points de référence permettant de traiter plusieurs questions telles que : Quel est l'impact immédiat de la sécheresse sur la défoliation, spatialement et en terme de magnitude ?  Quelle est la réponse de la végétation un an plus tard, c'est à dire après une saison des pluies complète ? Existe-t'il une mortalité différée de certains arbres conduisant à observer des baisses de LAI plus tardivement ?
 
-Ce protocole vise à quantifier et spatialiser la dynamique écologique en 4 phases :
-1. **État pré-choc (2013-2014) :** Référence de la forêt humide en conditions nominales.
-2. **Impact immédiat (2015-2016) :** Pic de sécheresse et défoliation par cavitation hydraulique.
-3. **Reprise intermédiaire (2017) :** Réaction phénologique post-pluies (phénomène de *leaf flush*).
-4. **Bilan post-choc (2018) :** Séparation des trajectoires de résilience et détection de la mortalité différée (*legacy effect*).
-
-```
-               [ 2013 - 2014 ]          État de référence pré-choc
-                      ↓
-               [ 2015 - 2016 ]          Choc hydrique El Niño
-                      ↓
-                   [ 2017 ]             Reprise intermédiaire / Flush foliaire
-                      ↓
-                   [ 2018 ]             Bilan structurel à long terme
-```
-
+1. **État pré-choc (2013-2014) :** Référence de la forêten conditions initiales
+2. **Impact immédiat (2015-2016) :** Pic de sécheresse et défoliation en raison du manque d'eau
+3. **Reprise intermédiaire (2017) :** Réponse phénologique post-pluies 
+4. **Bilan post-choc (2018) :** Détection de la mortalité différée (*legacy effect*).
 ---
 
 ## 🗂️ Données et Environnement de Travail
