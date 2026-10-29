@@ -76,6 +76,7 @@ Pour cette séance 2, nous allons calculer plus concrètement les indicateurs. U
 
 #### 1. Masquage de la Forêt Tropicale Humide Fermée
 Pour centrer votre analyse et ne pas subir les biais liés aux milieux ouverts, cultures et savanes, nous allons restreindre la zone d'étude à la forêt tropicale humide. Nous allons donc construire un masque pour l'appliquer à vos indicateurs d'anomalies. Nous souhaitons conserver les valeurs d'anomalies lorsque cela concerne de la forêt humide tandis que les autres pixels devront être affichées en nodata. 
+
 *Sortie :* `masque_foret_dense.tif` (1 pour forêt dense, NoData pour le reste).  Appliquez ensuite ce masque sur vos différentes valeurs d'anomalies  pour obtenir `LAI_sech_foret`, `LAI_reprise_foret` et `LAI_reprise_n1_foret`.
 
 #### 2. Matrice de Typologie de Résilience (Calculatrice Raster)
