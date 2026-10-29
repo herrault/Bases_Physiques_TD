@@ -99,10 +99,14 @@ Formule appliquée :
 ```
 
 #### 3. Post-traitement Spatial (Génération des Patchs)
+
+Une dernière éatpe vous est proposée pour lisser spatialement votre résultat et éliminer l'aspect "poivre et sel" lié au bruit des images MODIS. 
+
 * Outil : **GRASS `r.neighbors`**
   * Paramètres : Voisinage circulaire ou carré de taille `3`, méthode `mode`.
   * Rôle : Lissage modal éliminant le bruit résiduel tout en conservant les frontières des massifs.
-* Calcul des surfaces : Utilisation de l'outil *Rapport d'analyse de valeur unique de raster* pour extraire le décompte des pixels et les surfaces en $\text{km}^2$.
+    
+* Question : quelle est la surface occupée par chaque classe ?
 
 ---
 
