@@ -112,6 +112,8 @@ Une dernière éatpe vous est proposée pour lisser spatialement votre résultat
 
 ## 📊 Échantillonnage et Tests Statistiques sous R
 
+Pour compléter l'analyse, nous souhaiterions maintenant savoir si les classes obtenus se distinguent selon deux aspects : (1) le LAI initial, en d'autres mots, est-ce la structure du couvert initial qui conditionne la trajectoire de déperissement ? (2) Le LAI de 2017 permet-il d'observer des différe,ces entre classes ? Autrement dit, cet état intermédiaire est il révelateur des trajectoires de déparissement observées ?
+
 Pour tester si la densité foliaire initiale conditionne la vulnérabilité et analyser le comportement transitoire de 2017 :
 
 1. Vectorisation du raster lissé (`Polygonaliser`).
