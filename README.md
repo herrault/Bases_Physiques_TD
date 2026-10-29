@@ -61,19 +61,15 @@ L'objectif de cette première séance est de préparer les données dans le but 
 Pour cette séance 2, nous allons calculer plus concrètement les indicateurs. Un moyen d'observer comment une situation s'écarte d'une autre dans les sciences du climat est de s'appuer sur des anomalies. Ces dernières décrivent les écarts par rapport à une référence tandis que le sens des valeurs résultant de ces écarts informe sur la positivité ou au contraire la négativité d'un processus en cours. Chaque point de référence sera décrit pas cette anomalie (voir indicateur ci-dessous). La calculatrice raster est à priivilégier pour l'ensemble des calculs.  
 
 1. **Indicateur 1 : État de référence nominal ($\text{LAI}_{\text{ref}}$)**
-   $$\text{LAI}_{\text{ref}} = \frac{\text{LAI}_{2013} + \text{LAI}_{2014}}{2}$$
    *Interprétation :* Appliquez un gradient continu pour représenter la biomasse foliaire avant perturbation. Que pouvez vous dire des valeurs compris au delà de 5 ? En dessous ?
 
 2. **Indicateur 2 : Anomalie du choc de sécheresse ($\text{LAI}_{\text{sech}}$)**
-   $$\Delta\text{LAI}_{\text{sech}} = \text{LAI}_{2016} - \text{LAI}_{\text{ref}}$$
    *Interprétation :* Appliquez un gradient continu asymétrique de la perte foliaire sous l'effet du pic El Niño. Que signifie les valeurs négatives ou positives ou bien autour de 0, dans un intervalle de +/- 0.5.
 
 3. **Indicateur 3 : Anomalie résiduelle intermédiaire ($\text{LAI}_{\text{reprise}}$)**
-   $$\Delta\text{LAI}_{\text{reprise}} = \text{LAI}_{2017} - \text{LAI}_{\text{ref}}$$
    *Interprétation :*Appliquez un gradient continu asymétrique de la résilience à court terme ($+1$ an après perturbation). Que signifie les valeurs négatives ou positives ou bien autour de 0, dans un intervalle de +/- 0.5.
 
 4. **Indicateur 4 : Bilan structurel à long terme ($\text{LAI}_{\text{reprise\_n1}}$)**
-   $$\Delta\text{LAI}_{\text{reprise\_n+1}} = \text{LAI}_{2018} - \text{LAI}_{\text{ref}}$$
    *Interprétation :* De la même manière que précédemment, appliquez un gradient continu. Que signifie les valeurs obtenus et en quoi différent-t'elles des valeurs obtenus précédemment ?
 ---
 
