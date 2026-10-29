@@ -80,7 +80,8 @@ Pour centrer votre analyse et ne pas subir les biais liés aux milieux ouverts, 
 *Sortie :* `masque_foret_dense.tif` (1 pour forêt dense, NoData pour le reste).  Appliquez ensuite ce masque sur vos différentes valeurs d'anomalies  pour obtenir `LAI_sech_foret`, `LAI_reprise_foret` et `LAI_reprise_n1_foret`.
 
 #### 2. Matrice de Typologie de Résilience (Calculatrice Raster)
-Croisement de l'impact en 2016 et du bilan en 2018 avec un seuil de significativité écologique fixé à $|\Delta\text{LAI}| = 0{,}5\text{ m}^2/\text{m}^2$ :
+
+Maintenant, une possibilité serait de combiner ces différentes informations pour obtenir une typologie. Avant tout chose, nous allons fixer un seuil de significativité à $|\Delta\text{LAI}| = 0{,}5\text{ m}^2/\text{m}^2$. A partir du tableau suivant et de la calculatrice raster, obtenez une image décrivant ces différentes scénarii.
 
 | Choc 2016 (`LAI_sech`) | État 2018 (`LAI_reprise_n+1`) | Classe | Typologie | Définition Écologique |
 | :---: | :---: | :---: | :--- | :--- |
