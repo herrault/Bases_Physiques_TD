@@ -85,8 +85,8 @@ Maintenant, une possibilité serait de combiner ces différentes informations po
 
 | Choc 2016 (`LAI_sech`) | État 2018 (`LAI_reprise_n+1`) | Classe | Typologie | Définition Écologique |
 | :---: | :---: | :---: | :--- | :--- |
-| $\ge -0{,}5$ | $\ge -0{,}5$ | **1** | **Résistante** | Forêt tampon peu vulnérable, aucun décrochage majeur. |
-| $< -0{,}5$ | $\ge -0{,}5$ | **2** | **Résiliente** | Forte perte en 2016 suivie d'une cicatrisation complète en 2018. |
+| $\ge -0{,}5$ | $\ge -0{,}5$ | **1** | **Résistante** | Forêt peu vulnérable, aucune défoliation majeure. |
+| $< -0{,}5$ | $\ge -0{,}5$ | **2** | **Résiliente** | Forte perte en 2016 suivie d'un recouvrement complet du houppier en 2018. |
 | $< -0{,}5$ | $< -0{,}5$ | **3** | **Dégradée** | Dommages structurels immédiats et dépérissement durable. |
 | $\ge -0{,}5$ | $< -0{,}5$ | **4** | **Legacy Effect** | Apparence saine en 2016, effondrement différé en 2018 (mortalité retardée). |
 
