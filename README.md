@@ -2,6 +2,8 @@
 
 Guide méthodologique et protocole de travaux pratiques (TP) pour l'évaluation de la réponse spatio-temporelle du couvert forestier amazonien à partir de séries temporelles satellitaires MODIS LAI (*Leaf Area Index*).
 
+https://filesender.renater.fr/?s=download&token=e578529a-6717-49aa-be5d-f0130b34400b
+
 ---
 
 ## 📌 Contexte Scientifique et Pédagogique
