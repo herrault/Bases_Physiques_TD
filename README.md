@@ -1,4 +1,4 @@
-# Analyse de la Résilience de la Canopée Amazonienne face à l'Épisode El Niño (2015-2016)
+# Les effets d'El Niño (2015-2016) sur la forêt du Mato Grosso : le cas de la défoliation foliaire
 
 Guide méthodologique et protocole de travaux pratiques (TP) pour l'évaluation de la réponse spatio-temporelle du couvert forestier amazonien à partir de séries temporelles satellitaires MODIS LAI (*Leaf Area Index*).
 
@@ -33,7 +33,9 @@ L'objectif de cette première séance est de préparer les données dans le but 
    * Vérification de l'emprise et de la plage de valeurs physiques ($0$ à $7\text{ m}^2/\text{m}^2$). Les valeurs supérieures à $7$ (ex. $25{,}4$) correspondent aux masques de nuages ou d'eau.
 
 2. **Constitution des stacks annuels :**
-   * Regroupement des scènes 8-jours en stacks annuels (`stack_2013`, `stack_2014`, `stack_2015`, `stack_2016`, `stack_2017`, `stack_2018`) via le menu `Raster > Construire un raster virtuel...` ou `Fusionner`. 
+   * Regroupement des scènes 8-jours en stacks annuels (`stack_2013`, `stack_2014`, `stack_2015`, `stack_2016`, `stack_2017`, `stack_2018`) via le menu `Raster > Construire un raster virtuel...` ou `Fusionner`.
+  
+Cette première étape de regroupement donne un aperçu des 
 
 3. **Filtrage des artefacts (Reclassification par lot) :**
    * Outil : **Reclassification par table** (*Reclassify by table*) en mode **Processus par lot**.
@@ -202,7 +204,3 @@ ggsave("resultats_resilience_amazonie.png", fig, width = 14, height = 7, dpi = 3
 
 ---
 
-## 🔬 Principaux Résultats Écologiques Attendus
-
-* **Vulnérabilité des fortes biomasses foliaires :** Les peuplements de la classe *Dégradée* présentent des valeurs initiales de LAI significativement plus élevées en 2014 ($p < 0{,}05$). En contexte de déficit hydrique sévère, leur demande évapotranspiratoire accrue précipite le phénomène de rupture hydraulique par cavitation.
-* **Le piège phénologique de 2017 (*Flush* foliaire) :** La classe *Legacy* conserve une anomalie neutre ou positive en 2017, indiscernable statistiquement de la classe *Résistante* (`ns`). Cette reprise temporaire de surface foliaire masque l'épuisement des réserves carbonées internes qui conduit à une mortalité différée mesurable uniquement à $+2$ ans (2018).
