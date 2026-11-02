@@ -35,14 +35,16 @@ L'objectif de cette première séance est de préparer les données dans le but 
 2. **Constitution des stacks annuels :**
    * Regroupement des scènes 8-jours en stacks annuels (`stack_2013`, `stack_2014`, `stack_2015`, `stack_2016`, `stack_2017`, `stack_2018`) via le menu `Raster > Construire un raster virtuel...` ou `Fusionner`.
   
-Cette première étape de regroupement donne un aperçu des 
+Ces premiers fichiers de regroupement sont à exporter correctement en .tif avec des noms identiques à ceux proposé plus haut. Vous les réutiliserez dans l'étape suivante.  
 
 3. **Filtrage des artefacts (Reclassification par lot) :**
    * Outil : **Reclassification par table** (*Reclassify by table*) en mode **Processus par lot**.
    * Règle de reclassification :
      * Plage `[7.001, 255]` $\to$ Nouvelle valeur : `-9999` (NoData).
      * Désactiver l'option *Remplacer les valeurs non trouvées par NoData* pour conserver intactes les valeurs physiques de forêt ($0$ à $7$).
-     * Valeur NoData de sortie : `-9999`.
+     * Valeur NoData de sortie : `-9999.
+
+NB : n'oubliez pas de reconstituer vos stack annuels "stack_date_reclass.tif" pour être en mesure de réaliser vos moyennes par la suite. 
 
 4. **Agrégation temporelle annuelle :**
    * Outil : **GRASS `r.series`**
